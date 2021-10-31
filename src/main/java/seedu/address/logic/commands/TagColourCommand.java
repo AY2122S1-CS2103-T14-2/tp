@@ -56,7 +56,7 @@ public class TagColourCommand extends Command {
         ObservableList<Cca> ccaList = model.getAddressBook().getCcaList();
         for (int i = 0; i < ccaList.size(); i++) {
             Cca cca = ccaList.get(i);
-            model.setCca(cca, cca); //refresh ALL ccas (should be faster than running through all cca and checking tags)
+            model.setCca(cca, cca); // refresh all ccas (should be faster than running through all cca and checking tags)
         }
         ObservableList<Person> personList = model.getAddressBook().getPersonList();
         for (int i = 0; i < personList.size(); i++) {
